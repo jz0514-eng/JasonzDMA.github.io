@@ -156,3 +156,29 @@ body {
   padding: 20px 0;  /* space above and below */
   border-bottom: 1px solid #ddd; /* optional, if you want visual separation */
 }
+
+@media (max-width: 768px) {
+  .navbar-inner,
+  .navbar .container,
+  .nav_pad {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-name {
+    position: static;         /* remove absolute positioning */
+    margin-bottom: 10px;      /* add spacing below name */
+  }
+
+  .nav-links,
+  .navbar ul {
+    flex-wrap: wrap;          /* allow wrapping */
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .navbar a {
+    font-size: 1rem;          /* slightly smaller text */
+  }
+}
