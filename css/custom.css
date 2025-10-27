@@ -331,9 +331,9 @@ body {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  
+  padding: 2px px;
+  color: rgb(0, 0, 0);
 }
 
 .row:after {
